@@ -28,3 +28,9 @@ Configure the Kubectl. This look for the kube config file in the default path `~
 ```
 
 Copy the build plugin to `./bin/plugin` directory. Change the `CloudType` in conf.yml to `AWS`. This will load and configure the plugin.
+
+## TODO
+
+- Support cloud_init aka user_data
+- Improve scaling decisions
+- Update dependencies

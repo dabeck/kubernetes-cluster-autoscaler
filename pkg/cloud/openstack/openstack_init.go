@@ -1,8 +1,8 @@
 package openstackinit
 
 import (
-	"io/ioutil"
 	"log"
+	"os"
 	"time"
 
 	"github.com/dabeck/kubernetes-cluster-autoscaler/pkg/common/datastructures"
@@ -82,7 +82,7 @@ type Flavours struct {
 
 // ReadConfig read and configure starup variables from the config.yml
 func ReadConfig() string {
-	ConfigFile, err := ioutil.ReadFile("conf.yml")
+	ConfigFile, err := os.ReadFile("conf.yml")
 	if err != nil {
 		log.Fatalf("[ERROR] Error reading Config YAML file: %s\n", err)
 	}

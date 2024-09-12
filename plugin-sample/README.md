@@ -1,11 +1,12 @@
-# This is a sample plugin structure.
+# This is a sample plugin structure
 
 This code sample use AWS Go SDK to provide an idea about how to write a plugin for Kubernetes cluster auto scalar.
 
 Plugin should have `ModifyEventAnalyzer` and `DeleteEventAnalyzer` main function. Main `autoscalar` will search for these two functions in the plugin.
 
 Build the plugin,
-```
+
+```sh
 go build -buildmode=plugin -o AWS.so main.go
 ```
 
