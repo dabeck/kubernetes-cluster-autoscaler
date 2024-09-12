@@ -3,19 +3,20 @@ package main
 import (
 	"context"
 	"encoding/json"
-	"github.com/Chathuru/kubernetes-cluster-autoscaler/pkg/cloud/openstack"
-	"github.com/Chathuru/kubernetes-cluster-autoscaler/pkg/cloud/openstack/handel-node-delete"
-	"github.com/Chathuru/kubernetes-cluster-autoscaler/pkg/cloud/openstack/handle-node-add"
-	"github.com/Chathuru/kubernetes-cluster-autoscaler/pkg/common/datastructures"
-	"github.com/Chathuru/kubernetes-cluster-autoscaler/pkg/common/functions"
+	"log"
+	"plugin"
+	"sync"
+
+	openstackinit "github.com/dabeck/kubernetes-cluster-autoscaler/pkg/cloud/openstack"
+	handelnodedelete "github.com/dabeck/kubernetes-cluster-autoscaler/pkg/cloud/openstack/handel-node-delete"
+	handlenodeadd "github.com/dabeck/kubernetes-cluster-autoscaler/pkg/cloud/openstack/handle-node-add"
+	"github.com/dabeck/kubernetes-cluster-autoscaler/pkg/common/datastructures"
+	"github.com/dabeck/kubernetes-cluster-autoscaler/pkg/common/functions"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/dynamic"
 	"k8s.io/client-go/rest"
-	"log"
-	"plugin"
-	"sync"
 )
 
 var (

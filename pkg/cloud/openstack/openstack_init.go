@@ -1,13 +1,14 @@
 package openstackinit
 
 import (
-	"github.com/Chathuru/kubernetes-cluster-autoscaler/pkg/common/datastructures"
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/openstack"
-	"gopkg.in/yaml.v3"
 	"io/ioutil"
 	"log"
 	"time"
+
+	"github.com/dabeck/kubernetes-cluster-autoscaler/pkg/common/datastructures"
+	"github.com/rackspace/gophercloud"
+	"github.com/rackspace/gophercloud/openstack"
+	"gopkg.in/yaml.v3"
 )
 
 // FlavorsList, and other list og global variables
