@@ -57,7 +57,7 @@ spec:
     spec:
       containers:
         - name: autoscalar
-          image: chathuru/autoscaler:latest
+          image: dabeck/cluster-autoscaler:latest
           imagePullPolicy: Always
           volumeMounts:
             - name: config

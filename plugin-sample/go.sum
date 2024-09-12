@@ -40,8 +40,8 @@ github.com/Azure/go-autorest/logger v0.1.0/go.mod h1:oExouG+K6PryycPJfVSxi/koC6L
 github.com/Azure/go-autorest/tracing v0.5.0/go.mod h1:r/s2XiOKccPW3HrqB+W0TQzfbtp2fGCgRFtBroKn4Dk=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
-github.com/Chathuru/kubernetes-cluster-autoscaler v0.0.0-20201122084515-8da9d7bdee6a h1:LM6vbY0PBpzms5G18it/meLzblNaOTv3kZuXbX+hIi4=
-github.com/Chathuru/kubernetes-cluster-autoscaler v0.0.0-20201122084515-8da9d7bdee6a/go.mod h1:PZnBa+gsxpRTYJDs2q7PM+zV9YGCdbUygXuwTO4omSc=
+github.com/dabeck/kubernetes-cluster-autoscaler v0.0.0-20201122084515-8da9d7bdee6a h1:LM6vbY0PBpzms5G18it/meLzblNaOTv3kZuXbX+hIi4=
+github.com/dabeck/kubernetes-cluster-autoscaler v0.0.0-20201122084515-8da9d7bdee6a/go.mod h1:PZnBa+gsxpRTYJDs2q7PM+zV9YGCdbUygXuwTO4omSc=
 github.com/Djarvur/go-err113 v0.0.0-20200410182137-af658d038157/go.mod h1:4UJr5HIiMZrwgkSPdsjy2uOQExX/WEILpIrO9UPGuXs=
 github.com/NYTimes/gziphandler v0.0.0-20170623195520-56545f4a5d46/go.mod h1:3wb06e3pkSAbeQ52E9H9iFoQsEEwGN64994WTCIhntQ=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=

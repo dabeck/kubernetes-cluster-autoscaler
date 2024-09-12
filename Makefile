@@ -48,7 +48,7 @@ ifeq ($(PLATFORM),Win)
 endif
 
 VERSION ?= latest
-DEFAULTIMAGE ?= dabeck/kubernetes-cluster-autoscaler/app:$(VERSION)
+DEFAULTIMAGE ?= dabeck/cluster-autoscaler:$(VERSION)
 
 .PHONY: all
 
